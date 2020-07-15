@@ -4,7 +4,7 @@
   "description": "A CSS-only spinners for React",
   "main": "index.js",
   "scripts": {
-    "format": "prettier-eslint --write 'src/**/*.js'"
+    "format": "prettier-eslint --write '**/*.js'"
   },
   "husky": {
     "hooks": {
@@ -13,7 +13,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier-eslint --write",
+      "npm run format",
       "git add"
     ]
   },
