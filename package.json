@@ -6,6 +6,17 @@
   "scripts": {
     "format": "prettier-eslint --write 'src/**/*.js'"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint --write 'src/**/*.js'",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rapmendoza/react-css-spinners.git"
@@ -22,6 +33,8 @@
   },
   "homepage": "https://github.com/rapmendoza/react-css-spinners#readme",
   "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "prettier-eslint-cli": "^5.0.0"
   },
   "dependencies": {}
