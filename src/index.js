@@ -1,18 +1,8 @@
-console
-  .log(
-    'asasdasd' +
-        '2222' +
-  "qwerty"
-  )
-;
+console.log("asasdasd" + "2222" + "qwerty");
 
-
-(b) => {
+b => {
   return false;
 };
-
-
-
 
 (a, b) => {
   return false;
